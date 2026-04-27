@@ -34,13 +34,12 @@ class Pessoa(ABC):
     def get_type(self):
         pass
 
-
-
 class Aluno(Pessoa):
     def __init__(self, name=None, email=None, id=None, notas=None):
         super().__init__(name, email, id)
         self.notas = notas
 
+    # ---  
     @property
     def notas(self):
         return self._notas
@@ -51,6 +50,7 @@ class Aluno(Pessoa):
             if nota < 0 or nota > 20:
                 raise ValueError("As notas devem estar entre 0 e 20")
         self._notas = lista_notas
+    # ---
 
     def calcular_media(self):
         return sum(self.notas) / len(self.notas)
