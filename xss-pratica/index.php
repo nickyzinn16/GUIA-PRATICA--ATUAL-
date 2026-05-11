@@ -30,9 +30,9 @@
 
     <?php
         if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $comment = $_POST['comment'];     
+            $name = dataValidation ($_POST['name']);
+            $email = dataValidation ($_POST['email']);
+            $comment = dataValidation ($_POST['comment']);     
 
             $sql = "INSERT INTO feedbacks (name, email, comment) VALUES ('$name', '$email', '$comment')";
             $conn->query($sql);
