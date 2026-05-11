@@ -11,9 +11,3 @@ try:
 
 except:
     print(f"Erro ao iserir os arquivos")
-
-    quero um sistema com mini menu (1-nome, 2-lista nomes, 3-sair prog). 
-    quando o 1 pede nome e insere o nome no arquivo, quando 2 lista os nomes do ficheiro, 3 - sair
-        Validacoes
-        Evitar nomes vazios
-        Apresentar msg caso arquivo estiver vaziu (nao tiver nenuma informacao)
