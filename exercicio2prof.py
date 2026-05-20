@@ -36,7 +36,7 @@ def exportar_csv_lib():
 
 def exportar_csv_manual():
     try:
-        conn = conector()
+        conn = connector()
         cursor = conn.cursor()
 
         query = f"SELECT * FROM users"
