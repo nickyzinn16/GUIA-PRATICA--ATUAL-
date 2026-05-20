@@ -34,26 +34,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
+        <link rel="stylesheet" href="login.css">
     </head>
     <body>
-        <h1>Entrar no sistema</h1>
-        <div>
-            <form method="post">
-                <div>
-                    <label for="email">Insira seu email</label>
-                    <input type="email" id="email" name="email" required placeholder="Insira seu email"> 
-                </div>
-                <div>
-                    <label for="password">Palavra Passe</label>
-                    <input type="password" id="password" name="password" required placeholder="Insira sua palavra passe"> 
-                </div>
-                <div>
-                    <button type="submit" name="login">Entrar no sistema</button>
-                </div>
-                <div>
-                    <a href="register.php">Nao tenho uma conta. Registar</a>
-                </div>
-            </form>
-        </div>
+        <section class="login">
+            <div class="imagem"></div>
+            <div class="formulario">
+                <h1>Entrar no sistema</h1>
+                <form method="post">
+                    <div class="campo">
+                        <label for="email">Insira o seu email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Insira o seu email"> 
+                    </div>
+                    <div class="campo">
+                        <label for="password">Insira a sua palavra passe:</label>
+                        <input type="password" id="password" name="password" required placeholder="Insira a sua palavra passe"> 
+                    </div>
+                    <div class="campo">
+                        <button type="submit" name="login">Entrar no sistema</button>
+                    </div>
+                    <div class="campo">
+                        <a href="register.php">Não tem uma conta? Registra-te</a>
+                    </div>
+                </form>
+            </div>
+
+        </section>
     </body>
 </html>

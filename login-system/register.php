@@ -15,38 +15,40 @@
         }
     }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <link rel="stylesheet" href="register.css">
+        <title>Registrar</title>
     </head>
     <body>
-        <h1>Registrar uma nova conta</h1>
-        <div>
+        <div class="container">
+            <h1>Registrar uma nova conta</h1>
             <form method="post">
                 <div>
-                    <label for="name">Nome Completo</label>
+                    <label for="name">Nome completo:</label>
                     <input type="text" id="name" name="name" required placeholder="Insira o Seu nome completo"> 
                 </div>
                 <div>
-                    <label for="email">Insira seu email</label>
+                    <label for="email">Insira seu email:</label>
                     <input type="email" id="email" name="email" required placeholder="Insira seu email"> 
                 </div>
                 <div>
-                    <label for="username">Username</label>
+                    <label for="username">Insira seu username:</label>
                     <input type="text" id="username" name="username" required placeholder="Insira seu username"> 
                 </div>
                 <div>
-                    <label for="password">Palavra Passe</label>
+                    <label for="password">Insira sua palavra passe:</label>
                     <input type="password" id="password" name="password" required placeholder="Insira sua palavra passe"> 
                 </div>
                 <div>
                     <button type="submit" name="register">Enviar dados</button>
                 </div>
                 <div>
-                    <a href="login.php">Tenho uma conta, quero entrar</a>
+                    <a href="login.php">Tenho uma conta? Faça Login</a>
                 </div>
             </form>
         </div>
