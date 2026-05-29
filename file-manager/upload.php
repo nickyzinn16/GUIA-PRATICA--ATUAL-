@@ -3,7 +3,7 @@
     include 'connection.php';
     $error_message = "";
     $sucess_message = "";
-    $file_extension = "nada por ainda"
+    $file_extension = "nada por ainda";
 
     if (isset($_POST['send'])){
         $name = $_POST['name'];
